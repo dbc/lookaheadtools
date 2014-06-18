@@ -14,7 +14,7 @@ For example: ::
   assert looker[3] == 3
   assert looker[0] == 0
   assert looker[1000] == None
-  assert looker[0:9:2] == [1,2,4]
+  assert looker[0:9:2] == [0,2,4]
   assert next(looker) == 0
   assert looker[0] == 1
 
