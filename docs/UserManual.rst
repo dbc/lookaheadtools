@@ -86,7 +86,7 @@ find the character.
 
 The ``cookie`` field is set to a value provided by the user. 
 The common idiom is to set ``cookie`` to be the file name, but it can be
-any arbitrary object.
+any arbitrary object instance.
 ``cookie`` is simply handed back in instances of Lexpos(), without processing.
 
 FileLookahead(Lookahead)

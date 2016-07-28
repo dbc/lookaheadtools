@@ -1,8 +1,6 @@
 from setuptools import setup,Command,os
-from setuptools.command import sdist
-
 # Disable setup's overly-eager file finding.
-sdist.finders[:]
+import setuptools.command.sdist as _sdist
 
 def read(filename):
     return open(os.path.join(os.path.dirname(__file__), filename)).read() 
@@ -26,8 +24,8 @@ class veryclean(Command):
 setup(
     name = 'lookaheadtools',
     cmdclass = {'veryclean':veryclean},
-    version = '0.2b',
-    description = 'Make any iterator a look-ahead iterator. Specialized look-ahead iterators for text files.',
+    version = '1.0',
+    description = 'Make any iterator a look-ahead iterator. Provides specialized look-ahead iterators for text files.',
     author = 'David B. Curtis',
     author_email = 'davecurtis@sonic.net',
     url = 'http://github.com/dbc/lookaheadtools',
